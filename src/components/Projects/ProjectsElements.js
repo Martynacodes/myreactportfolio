@@ -94,6 +94,7 @@ export const Button = styled.button`
 border-radius: 50px;
   background: #010606;
   white-space: nowrap;
+  margin: 5px;
   padding: ${({ big }) => (big ? '14px 48px' : '12px 30px')};
   color: ${({ dark }) => (dark ? '#010606' : '#ffffff')};
   font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
