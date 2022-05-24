@@ -1,10 +1,9 @@
 import React from 'react';
+import Icon0 from '../../images/svg-0.svg';
 import Icon2 from '../../images/svg-2.svg';
 import Icon3 from '../../images/svg-3.svg';
-import Icon4 from '../../images/svg-4.svg';
 import Icon5 from '../../images/svg-5.svg';
 import Icon6 from '../../images/svg-6.svg';
-import Icon7 from '../../images/svg-7.svg';
 
 
 import {
@@ -43,14 +42,6 @@ const Projects = ({
         window.open('https://github.com/Martynacodes/PricingPanel')
     };
 
-    const studioDesignDemo = () => {
-        window.open('https://relaxed-wisp-c3ff16.netlify.app/')
-    };
-
-    const studioDesignCode = () => {
-        window.open('https://github.com/Martynacodes/StudioOfDesign')
-    };
-
     const scoreKeeperDemo = () => {
         window.open('https://steady-griffin-2ff41b.netlify.app/')
     };
@@ -67,24 +58,17 @@ const Projects = ({
         window.open('https://github.com/Martynacodes/myreactportfolio')
     };
 
-    const photoBlogDemo = () => {
-        window.open('https://harmonious-gaufre-8d494c.netlify.app/')
-    };
-
-    const photoBlogCode = () => {
-        window.open('https://github.com/Martynacodes/photoblog')
-    };
 
     return (
         <ProjectsContainer id='projects'>
             <ProjectsH1>My Projects</ProjectsH1>
             <ProjectsWrapper>
-                <ProjectsCard>
-                    <ProjectsIcon src={Icon2} />
-                    <ProjectsH2>Full Stack Equestrian App</ProjectsH2>
+        <ProjectsCard>
+                    <ProjectsIcon src={Icon0} />
+                    <ProjectsH2> React To Do List</ProjectsH2>
                     <ProjectsP>
-                        Search, book and review horsecamps around the US.
-                        Built with JS, Node, Express and MongoDB.
+                        Add, edit, filter and delete tasks. Mark tasks as complete without deleting them.
+
                     </ProjectsP>
                     <BtnWrap>
                         <Button
@@ -116,14 +100,15 @@ const Projects = ({
                     </BtnWrap>
                 </ProjectsCard>
                 <ProjectsCard>
-                    <ProjectsIcon src={Icon3} />
-                    <ProjectsH2>Responsive Pricing Panel</ProjectsH2>
+                    <ProjectsIcon src={Icon2} />
+                    <ProjectsH2>Full Stack Equestrian App</ProjectsH2>
                     <ProjectsP>
-                        A responsive design business pricing panel project using CSS, Flexbox and HTML.
+                        Search, book and review horsecamps around the US.
+                        Built with JS, Node, Express and MongoDB.
                     </ProjectsP>
                     <BtnWrap>
                         <Button
-                            onClick={pricingPanelDemo}
+                            onClick={horseAppDemo}
                             smooth={true}
                             duration={500}
                             spy={true}
@@ -136,42 +121,7 @@ const Projects = ({
                             Demo
                         </Button>
                         <Button
-                            onClick={pricingPanelCode}
-                            smooth={true}
-                            duration={500}
-                            spy={true}
-                            exact='true'
-                            offset={-80}
-                            primary={primary ? 1 : 0}
-                            dark={dark ? 1 : 0}
-                            dark2={dark2 ? 1 : 0}
-                        >
-                            Code
-                        </Button>
-                    </BtnWrap>
-                </ProjectsCard>
-                <ProjectsCard>
-                    <ProjectsIcon src={Icon4} />
-                    <ProjectsH2>Business Landing Page</ProjectsH2>
-                    <ProjectsP>
-                        A landing page for an interior design studio. Created with HTML5, CSS3 and Flexbox.
-                    </ProjectsP>
-                    <BtnWrap>
-                        <Button
-                            onClick={studioDesignDemo}
-                            smooth={true}
-                            duration={500}
-                            spy={true}
-                            exact='true'
-                            offset={-80}
-                            primary={primary ? 1 : 0}
-                            dark={dark ? 1 : 0}
-                            dark2={dark2 ? 1 : 0}
-                        >
-                            Demo
-                        </Button>
-                        <Button
-                            onClick={studioDesignCode}
+                            onClick={horseAppCode}
                             smooth={true}
                             duration={500}
                             spy={true}
@@ -222,7 +172,7 @@ const Projects = ({
                 </ProjectsCard>
                 <ProjectsCard>
                     <ProjectsIcon src={Icon6} />
-                    <ProjectsH2>My portfolio page</ProjectsH2>
+                    <ProjectsH2>My Portfolio Page</ProjectsH2>
                     <ProjectsP>
                         My very own portfolio created with React.js, React Router, Smooth Scroll and Styled Components.
                     </ProjectsP>
@@ -255,15 +205,16 @@ const Projects = ({
                         </Button>
                     </BtnWrap>
                 </ProjectsCard>
-                <ProjectsCard>
-                    <ProjectsIcon src={Icon7} />
-                    <ProjectsH2>Photo Blog Site</ProjectsH2>
+    
+ <ProjectsCard>
+                    <ProjectsIcon src={Icon3} />
+                    <ProjectsH2>Responsive Pricing Panel</ProjectsH2>
                     <ProjectsP>
-                        A photographer's portfolio home page created with HTML5 and CSS3 and Flexbox.
+                        A responsive design business pricing panel project using CSS, Flexbox and HTML.
                     </ProjectsP>
                     <BtnWrap>
                         <Button
-                            onClick={photoBlogDemo}
+                            onClick={pricingPanelDemo}
                             smooth={true}
                             duration={500}
                             spy={true}
@@ -276,7 +227,7 @@ const Projects = ({
                             Demo
                         </Button>
                         <Button
-                            onClick={photoBlogCode}
+                            onClick={pricingPanelCode}
                             smooth={true}
                             duration={500}
                             spy={true}
